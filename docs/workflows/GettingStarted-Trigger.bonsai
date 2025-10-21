@@ -57,7 +57,7 @@
         </Combinator>
       </Expression>
       <Expression xsi:type="rx:SelectMany">
-        <Name>(G,T) = (-1,1)</Name>
+        <Name>(G,T)=(-1,1)</Name>
         <Workflow>
           <Nodes>
             <Expression xsi:type="WorkflowInput">
@@ -103,7 +103,7 @@
         </Combinator>
       </Expression>
       <Expression xsi:type="rx:SelectMany">
-        <Name>(G,T) = (-1,0)</Name>
+        <Name>(G,T)=(-1,0)</Name>
         <Workflow>
           <Nodes>
             <Expression xsi:type="WorkflowInput">
