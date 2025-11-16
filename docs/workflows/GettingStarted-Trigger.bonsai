@@ -41,7 +41,7 @@
         </Workflow>
       </Expression>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="glx:TriggerRecording">
+        <Combinator xsi:type="glx:Trigger">
           <glx:Host>localhost</glx:Host>
           <glx:Port>4142</glx:Port>
         </Combinator>
@@ -92,7 +92,7 @@
         </Workflow>
       </Expression>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="glx:TriggerRecording">
+        <Combinator xsi:type="glx:Trigger">
           <glx:Host>localhost</glx:Host>
           <glx:Port>4142</glx:Port>
         </Combinator>
@@ -138,7 +138,7 @@
         </Workflow>
       </Expression>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="glx:TriggerRecording">
+        <Combinator xsi:type="glx:Trigger">
           <glx:Host>localhost</glx:Host>
           <glx:Port>4142</glx:Port>
         </Combinator>

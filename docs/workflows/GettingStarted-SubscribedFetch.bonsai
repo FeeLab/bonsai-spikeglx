@@ -13,7 +13,7 @@
         </Combinator>
       </Expression>
       <Expression xsi:type="Combinator">
-        <Combinator xsi:type="glx:SpikeGLXInput">
+        <Combinator xsi:type="glx:Fetch">
           <glx:BufferLength>1000</glx:BufferLength>
           <glx:Host>localhost</glx:Host>
           <glx:Port>4142</glx:Port>
