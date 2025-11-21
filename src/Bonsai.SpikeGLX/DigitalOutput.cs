@@ -9,19 +9,21 @@ namespace Bonsai.SpikeGLX
     /// a sequence of values representing the state of the line.
     /// </summary>
     [Combinator]
-    [Description("Sets one or more digital output lines through SpikeGLX from a sequence of values representing the state of the line.")]
     [WorkflowElementCategory(ElementCategory.Sink)]
+    [Description("Sets one or more digital output lines through SpikeGLX from a sequence of values representing the state of the line.")]
     public class DigitalOutput
     {
         /// <summary>
         /// Gets or sets the IP address of the SpikeGLX command server.
         /// </summary>
+        [Category("Command Server")]
         [Description("The IP address of the SpikeGLX command server.")]
         public string Host { get; set; } = "localhost";
 
         /// <summary>
         /// Gets or sets the port of the SpikeGLX command server.
         /// </summary>
+        [Category("Command Server")]
         [Description("The port of the SpikeGLX command server.")]
         public int Port { get; set; } = 4142;
 
