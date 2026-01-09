@@ -284,6 +284,49 @@ namespace Bonsai.SpikeGLX
             if (ok == 0) throw new SpikeGLXException(hSglx);
         }
 
+
+        /// <summary>
+        /// Set trigger method for 
+        /// </summary>
+        /// <param name="outChan"></param>
+        /// <param name="trigTerm"></param>
+        /// <exception cref="SpikeGLXException"></exception>
+        public void NIWaveArm(string outChan, string trigTerm)
+        {
+            int ok = C_Sglx.c_sglx_ni_wave_arm(hSglx, outChan, trigTerm);
+            if (ok == 0) throw new SpikeGLXException(hSglx);
+        }
+
+        public void NIWaveLoad(string outChan, string wave, int loop)
+        {
+            int ok = C_Sglx.c_sglx_ni_wave_load(hSglx, outChan, wave, loop);
+            if (ok == 0) throw new SpikeGLXException(hSglx);
+        }
+
+        public void NIWaveStartStop(string outChan, int start)
+        {
+            int ok = C_Sglx.c_sglx_ni_wave_startstop(hSglx, outChan, start);
+            if (ok == 0) throw new SpikeGLXException(hSglx);
+        }
+
+        public void ObxWaveArm(int ip, int slot, int trig, int loop)
+        {
+            int ok = C_Sglx.c_sglx_obx_wave_arm(hSglx, ip, slot, trig, loop);
+            if (ok == 0) throw new SpikeGLXException(hSglx);
+        }
+
+        public void ObxWaveLoad(int ip, int slot, string wave)
+        {
+            int ok = C_Sglx.c_sglx_obx_wave_load(hSglx, ip, slot, wave);
+            if (ok == 0) throw new SpikeGLXException(hSglx);
+        }
+
+        public void ObxWaveStartStop(int ip, int slot, int start)
+        {
+            int ok = C_Sglx.c_sglx_obx_wave_startstop(hSglx, ip, slot, start);
+            if (ok == 0) throw new SpikeGLXException(hSglx);
+        }
+
         // Implement IDisposable.
         public void Dispose()
         {
